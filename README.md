@@ -26,6 +26,11 @@ Antidote는 **RAG(Retrieval-Augmented Generation)** 패턴을 기반으로 설�
 단일 모델의 한계를 극복하기 위해 역할별로 특화된 모델들을 체인(Chain) 형태로 연결합니다.
 * **Embedding & Retrieval**: `bge-m3` 모델을 통해 문맥적 의미가 유사한 법령 및 판례 Top-N 추출.
 * **Risk Classification**: `koELECTRA-small` 기반의 경량화된 분류기를 통한 독소 조항 1차 스캐닝.
+
+<img width="800" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/8455abe1-b23e-4504-b6cf-3ba2d24ed481" />
+
+
+  
 * **Reasoning & Validation**: `koELECTRA-base` 모델을 활용하여 검색된 근거의 신뢰도를 검증하고 최종 답변 생성.
 
 ---
